@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search your movie</title>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="banner">
+        <h1 class="banner-title">Search your movie here!</h1>
+        <form>
+            <div class="search-box">
+                <input type="text" id="title-movie" placeholder="Write movie title here to search">
+                <button id="btn-search" class="btn-search">
+                    <img src="./img/search-solid.svg" alt="icon search">
+                </button>
+            </div>
+            <div class="search-options">
+                <div class="search-options-type">
+                    <label for="type-result">Select type result:</label>
+                    <select id="type-result">
+                        <option value="movie">Movie | Película</option>
+                        <option value="series">Series</option>
+                        <option value="episode">Episode | Episodios</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </header>
+
+    <div id="results">
+        <div class="result-text"></div>
+        <div class="results"></div>
+    </div>
+
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
